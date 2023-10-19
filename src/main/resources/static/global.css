@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 50px;
+    background-color: #232323;
+}
+
+body::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 50vh;
+    background-color: #F6F6F6;
+    position: absolute;
+    bottom: 0;
+    margin: 0px -50px;
+    z-index: -1;
+}
+
+table {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container.vertical {
+    flex-direction: column;
+}
+
+.flex-container.gap10 {
+    gap: 10px;
+}
+
+.flex-container.gap20 {
+    gap: 20px;
+}
+
+.flex-container.gap30 {
+    gap: 30px;
+}
