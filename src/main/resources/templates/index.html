@@ -9,23 +9,25 @@
 </head>
 <body>
 <div class="main">
-<!--            <div class="rectangle"></div>-->
-<!--            <div class="div"></div>-->
-<!--            <div class="rectangle-2"></div>-->
     <div id="main-container" class="flex-container vertical gap30">
         <p class="text-wrapper">방탈출 예약 오픈 언제하는지 궁금하다면?</p>
-        <div class="frame">
-            <div class="frame-2">
-                <div class="text-wrapper-2">지역</div>
-                <div class="text-wrapper-3">홍대</div>
+        <div class="search-option-container">
+            <div id="region-container">
+                <div class="search-option">
+                    <div class="search-option-title">지역</div>
+                    <div class="search-option-content">홍대</div>
+                </div>
+                <div id="region-option-container" class="search-option">
+                    <div class="search-option-content" th:each="region : ${regionList}" th:text="${region.name}"></div>
+                </div>
             </div>
-            <div class="frame-2">
-                <div class="text-wrapper-2">예약 희망 날짜</div>
-                <div class="text-wrapper-3">날짜 선택</div>
+            <div class="search-option">
+                <div class="search-option-title">예약 희망 날짜</div>
+                <div class="search-option-content">날짜 선택</div>
             </div>
-            <div class="frame-3">
-                <div class="text-wrapper-2">지점 이름</div>
-                <div class="text-wrapper-3">이름 입력</div>
+            <div class="search-option flex-grow1">
+                <div class="search-option-title">지점 이름</div>
+                <div class="search-option-content">이름 입력</div>
             </div>
             <div class="div-wrapper"><div class="text-wrapper-4">검색하기</div></div>
         </div>
@@ -43,7 +45,7 @@
             <div id="cafe-list">
                 <table>
                     <tr th:each="cafe : ${cafeList}">
-                        <td><img class="logo" th:src=${cafe.logoImg}/></td>
+                        <td><img class="logo" th:src="${cafe.logoImg}"/></td>
                         <td class="text-wrapper-9" th:text="${cafe.name}"></td>
                         <td class="p">SILENT (스릴, 수사), LISTEN (액션,스릴)</td>
                         <td class="text-wrapper-10">2023.10.02</td>

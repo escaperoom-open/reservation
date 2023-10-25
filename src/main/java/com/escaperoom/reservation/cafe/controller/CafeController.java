@@ -20,6 +20,7 @@ public class CafeController {
             Model model
     ) {
         model.addAttribute("cafeList", cafeService.getCafeList(region));
+        model.addAttribute("regionList", cafeService.getRegionList());
         return "index";
     }
 }

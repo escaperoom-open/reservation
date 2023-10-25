@@ -2,29 +2,6 @@
     height: 100%;
 }
 
-.main .rectangle {
-    height: 523px;
-    top: 0;
-    left: 0;
-    background-color: #232323;
-}
-
-.main .div {
-    height: 523px;
-    top: 513px;
-    left: 0;
-    background-color: #f6f6f6;
-}
-
-.main .rectangle-2 {
-    height: 646px;
-    top: 240px;
-    left: 182px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 4px 4px 10px #aeaeae33;
-}
-
 #main-container {
     width: 80%;
     height: 100%;
@@ -39,15 +16,26 @@
     margin: 0px;
 }
 
-.main .frame {
+.main .search-option-container {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    top: 158px;
-    left: 182px;
+    position: relative;
 }
 
-.main .frame-2 {
+.main .search-option-container > div:nth-child(1), #region-option-container {
+    width: 15%;
+    min-width: 90px;
+    max-width: 130px;
+}
+
+.main .search-option-container > div:nth-child(2) {
+    width: 20%;
+    min-width: 120px;
+    max-width: 175px;
+}
+
+.main .search-option {
     display: flex;
     flex-direction: column;
     height: 55px;
@@ -58,44 +46,36 @@
     position: relative;
     background-color: #ffffff;
     border-radius: 5px;
-    border: 1px solid;
 }
 
-.main .text-wrapper-2 {
+.main .search-option-title {
     position: relative;
     margin-top: -1px;
     font-family: "Noto Sans-DisplaySemiBold", Helvetica;
     font-weight: 600;
-    color: #232323;
+    color: var(--main-black);
     font-size: 10px;
     letter-spacing: 0;
     line-height: normal;
 }
 
-.main .text-wrapper-3 {
+.main .search-option-content {
     font-family: "Noto Sans-Medium", Helvetica;
     font-weight: 500;
-    color: #232323;
+    color: var(--main-black);
     position: relative;
     font-size: 12px;
     letter-spacing: 0;
     line-height: normal;
 }
 
-.main .frame-3 {
-    display: flex;
-    flex-direction: column;
-    height: 55px;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 5px;
-    padding: 10px;
-    position: relative;
-    flex: 1;
-    flex-grow: 1;
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: 1px solid;
+#region-option-container {
+    position: absolute;
+    top: 65px;
+    height: max-content;
+    max-height: 200px;
+    z-index: 1;
+    overflow-y: scroll;
 }
 
 .main .div-wrapper {
@@ -136,7 +116,7 @@
     position: relative;
     font-family: "Noto Sans-SemiBold", Helvetica;
     font-weight: 600;
-    color: #232323;
+    color: var(--main-black);
     font-size: 12px;
     text-align: center;
     letter-spacing: 0;
@@ -147,7 +127,7 @@
     position: relative;
     font-family: "Noto Sans-SemiBold", Helvetica;
     font-weight: 600;
-    color: #232323;
+    color: var(--main-black);
     font-size: 12px;
     letter-spacing: 0;
     line-height: normal;
@@ -157,7 +137,7 @@
     position: relative;
     font-family: "Noto Sans-SemiBold", Helvetica;
     font-weight: 600;
-    color: #232323;
+    color: var(--main-black);
     font-size: 12px;
     letter-spacing: 0;
     line-height: normal;
@@ -167,7 +147,7 @@
     position: relative;
     font-family: "Noto Sans-SemiBold", Helvetica;
     font-weight: 600;
-    color: #232323;
+    color: var(--main-black);
     font-size: 12px;
     letter-spacing: 0;
     line-height: normal;
@@ -200,17 +180,10 @@
     position: relative;
 }
 
-/*.main .logo {*/
-/*    position: relative;*/
-/*    height: 27.13px;*/
-/*    margin-top: -1.23px;*/
-/*    margin-bottom: -1.23px;*/
-/*}*/
-
 .main .text-wrapper-9 {
     font-family: "Noto Sans-Medium", Helvetica;
     font-weight: 500;
-    color: #232323;
+    color: var(--main-black);
     position: relative;
     font-size: 12px;
     letter-spacing: 0;
@@ -221,7 +194,7 @@
     position: relative;
     font-family: "Noto Sans-Medium", Helvetica;
     font-weight: 500;
-    color: #232323;
+    color: var(--main-black);
     font-size: 12px;
     letter-spacing: 0;
     line-height: normal;
@@ -230,7 +203,7 @@
 .main .text-wrapper-10 {
     font-family: "Noto Sans-Medium", Helvetica;
     font-weight: 500;
-    color: #232323;
+    color: var(--main-black);
     position: relative;
     font-size: 12px;
     letter-spacing: 0;
@@ -264,63 +237,7 @@
     height: 26px;
     top: 37px;
     left: 53px;
-    background-color: #232323;
-}
-
-.main .rectangle-3 {
-    height: 17px;
-    top: 4px;
-    left: 19px;
-    border: 0.93px solid;
-    border-color: #ffffff;
-}
-
-.main .rectangle-4 {
-    height: 17px;
-    top: 4px;
-    left: 4px;
-    border: 0.93px solid;
-    border-color: #ffffff;
-}
-
-.main .overlap-group {
-    height: 20px;
-    top: 4px;
-    left: 39px;
-}
-
-.main .rectangle-5 {
-    height: 17px;
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
-    border: 0.28px solid;
-}
-
-.main .img {
-    height: 20px;
-    top: 0;
-    left: 0;
-}
-
-.main .overlap-2 {
-    height: 20px;
-    top: 4px;
-    left: 54px;
-}
-
-.main .rectangle-6 {
-    height: 2px;
-    top: 14px;
-    left: 34px;
-    background-color: #ffffff;
-}
-
-.main .rectangle-7 {
-    height: 2px;
-    top: 9px;
-    left: 34px;
-    background-color: #ffffff;
+    background-color: var(--main-black);
 }
 
 #cafe-list {
