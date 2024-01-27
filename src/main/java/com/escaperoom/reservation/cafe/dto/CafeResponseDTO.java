@@ -29,6 +29,8 @@ public class CafeResponseDTO {
 
     private LocalTime openTime;
 
+    private String reservationLink;
+
     public CafeResponseDTO(Cafe cafe, LocalDate wishDate) {
         this.cafeId = cafe.getCafeId();
         this.logoImg = cafe.getLogoImg();
@@ -37,5 +39,6 @@ public class CafeResponseDTO {
         // 예시: 희망날짜 23.08.20, 오픈되는 날짜 수 7개 => 20일 - 7일 + 1 = 14일 오픈
         this.openDate = wishDate.minusDays(cafe.getOpenDayNum() + 1);
         this.openTime = cafe.getOpenTime();
+        this.reservationLink = cafe.getReservationLink();
     }
 }
